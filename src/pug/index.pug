@@ -14,52 +14,24 @@ block append meta
 block title
   title #{metas.title}
 block body
-  .btn#aabb
-    p aaa
-    a(href= metas.url )
+  h3  トーク落ちカウント
 
-    ul.list-news
-      -
-        const newsData = [
-          {
-            "img":"3.jpg",
-            "date":"2020/05/01",
-            "cat":"行事",
-            "title":"新人研修を行いました",
-            "link":"news3.html"
-          },
-          {
-            "img":"2.png",
-            "date":"2020/02/01",
-            "cat":"お知らせ",
-            "title":"Webサイトをリニューアルしました",
-            "link":"news2.html"
-          },
-          {
-            "img":"1.jpg",
-            "date":"2019/12/20",
-            "cat":"お知らせ",
-            "title":"年末年始の営業のお知らせ",
-            "link":"news1.html"
-          },
-        ]
-      each val,i in newsData
-        li.c-news_item
-          a(href= metas.url + val.link)
-            .news-items-wrap
-              img(src=metas.imgpath + val.img, alt=val.title, srcset="")
-            .content-inner
-              p.title-name #{val.cat}
-              p.title-content #{val.title}
-
-    .sec_inner
-      .slider
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-    
+  table
+    tr
+      th(colspan=4) aaa
+    tr
+      td 時間
+      td 業種
+      td 決済者
+      td 架電結果
+    tr
+      td
+        .time 10:00~11:00
+        p
+          label(for="num1") 応答なし
+          input#num1(type="number" min="10" max="100")
+          span 件
+        p
+          label(for="num2") 応答あり
+          input#num2(type="number" min="10" max="100")
+          span 件
