@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css);
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  white-space: revert;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Breakpoints
+================================================ */
+/* -------------------------
+* header
+---------------------------*/
+header {
+  width: 63.5%;
+  margin: 0 auto;
+  padding: 27px 0;
+}
+header .nav_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .nav_wrap .top_logo {
+  width: 158px;
+}
+header .nav_wrap .menu_nav {
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  width: 322px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* -------------------------
+* top
+---------------------------*/
+main.top_mainImg_wrap {
+  margin-top: 13px;
+  /** about **/
+}
+main.top_mainImg_wrap .img_content_wrap {
+  width: 100%;
+  height: 555px;
+  background-image: url(../images/mainHeader_03@2x.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main.top_mainImg_wrap .img_content_wrap .name_block_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 720px;
+  margin: 0 auto;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+main.top_mainImg_wrap .img_content_wrap .name_block_wrap .job_name {
+  font-size: 20px;
+  margin-right: 10px;
+  letter-spacing: 0.05rem;
+  color: #fff;
+  text-align: right;
+  font-family: var(--mainFonts);
+}
+main.top_mainImg_wrap .img_content_wrap .name_block_wrap .my_name {
+  font-size: 64px;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 4px 0px 3px rgba(15, 37, 63, 0.8);
+  font-family: var(--titleFonts);
+}
+main.top_mainImg_wrap .img_content_wrap .top_mv_message_wrap {
+  position: absolute;
+  /* height: 130px; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 102, 102, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+main.top_mainImg_wrap .img_content_wrap .top_mv_message_wrap .mv_inner_message {
+  color: #fff;
+  width: 63.5%;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  line-height: 1.75;
+}
+main.top_mainImg_wrap .about_content_wrap {
+  margin: 107px auto 160px;
+  max-width: 920px;
+  width: 100%;
+}
+main.top_mainImg_wrap .about_content_wrap .section_title {
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  letter-spacing: 1rem;
+  margin-right: -1%;
+  color: #666666;
+  width: 100%;
+}
+main.top_mainImg_wrap .about_content_wrap .section_title .about_first_txt {
+  color: #ffbb5b;
+}
+main.top_mainImg_wrap .about_content_wrap .about_inner_message {
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+  padding: 8px;
+  background: #ff9e15;
+  background: -webkit-gradient(linear, left top, right top, from(#ff9e15), color-stop(50%, #7ac943), to(#3fa9f5));
+  background: linear-gradient(90deg, #ff9e15 0%, #7ac943 50%, #3fa9f5 100%);
+}
+main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 10px 80px;
+  position: relative;
+}
+main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_my_photo {
+  width: 295px;
+  -webkit-box-shadow: 25px 25px 53px -5px #8f8f8f;
+          box-shadow: 25px 25px 53px -5px #8f8f8f;
+  position: absolute;
+  top: -100px;
+  left: -145px;
+}
+main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_message {
+  font-family: var(--titleFonts);
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3;
+  letter-spacing: 0.6px;
+  margin: 0 0 0 auto;
+  padding-left: 190px;
+}
+main.top_mainImg_wrap .about_content_wrap .left_line {
+  text-align: left;
+  margin: 0 auto;
+}
+main.top_mainImg_wrap .about_content_wrap .center_line {
+  text-align: center;
+}
+main.top_mainImg_wrap .about_content_wrap .right_line {
+  text-align: right;
+  margin: 0 auto;
+}
+
+.about_list {
+  font-size: 100px;
+}
+
+.test {
+  color: blue;
+}
+@media screen and (max-width: 767px) {
+  .test {
+    color: yellow;
+  }
+}

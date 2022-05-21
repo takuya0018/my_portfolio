@@ -14,24 +14,42 @@ block append meta
 block title
   title #{metas.title}
 block body
-  h3  トーク落ちカウント
+  main#topPage.top_mainImg_wrap
+    .img_content_wrap 
+      ul.name_block_wrap 
+        li.block_name_01 
+          ul.block_list01_wrap 
+            li.job_name Codeing 
+            li.my_name Takuya
+        
+        li.block_name_02
+          ul.block_list01_wrap
+            li.job_name Web Desiger
+            li.my_name Kikuta
+        
+      .top_mv_message_wrap
+        p.mv_inner_message
+         |人から人へ思いをつなげる
+         br
+         |想像と可能性をひろげ、わくわくする
+         br
+         |そんなお手伝いができたら．．．
 
-  table
-    tr
-      th(colspan=4) aaa
-    tr
-      td 時間
-      td 業種
-      td 決済者
-      td 架電結果
-    tr
-      td
-        .time 10:00~11:00
-        p
-          label(for="num1") 応答なし
-          input#num1(type="number" min="10" max="100")
-          span 件
-        p
-          label(for="num2") 応答あり
-          input#num2(type="number" min="10" max="100")
-          span 件
+    article#content-inner-wrap
+      section#about_content_wrap.about_content_wrap
+        h2.section_title.right_line
+          span.about_first_txt A
+          |bout
+        .about_inner_message
+          .bg_white
+            figure.about_my_photo
+              img(src=metas.imgpath + "about_img@2x.jpg", alt="自画像")
+            p.about_message 固定概念に囚われない、
+              br
+              |楽しい・面白いを大切にしています。
+              br
+              |お客様とのコミュニケーションを大切にし
+              br
+              |情報整理から問題点を洗い出し、
+              br
+              |わくわく出来るようなWEBサイトを制作します。

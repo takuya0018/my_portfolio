@@ -1,10 +1,12 @@
 header
   //- ここからheder内容
-  h1 テストテストテスト
-
+  
   include ./_json
-  nav.nav
-    ul.list-menu
+  nav.nav_wrap
+    h1#top_logo.top_logo
+      a(href="../")
+        img(src="../images/logo2.png", alt="Liberty")
+    ul.menu_nav
       - for (var i = 0; i < headerMenu.length; i++)
         li
           if headerMenu[i].pageLink != null

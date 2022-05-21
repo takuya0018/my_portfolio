@@ -1,0 +1,23 @@
+/* -------------------------
+* header
+---------------------------*/
+header {
+	width: 63.5%;
+	margin: 0 auto;
+	padding: 27px 0;
+	.nav_wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.top_logo {
+			width: 158px;
+		}
+		.menu_nav {
+			font-family: $titleFonts;
+			display: flex;
+			margin-top: 25px;
+			width: 322px;
+			justify-content: space-between;
+		}
+	}
+}
