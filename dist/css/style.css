@@ -117,6 +117,7 @@ header .nav_wrap .menu_nav {
 main.top_mainImg_wrap {
   margin-top: 13px;
   /** about **/
+  /** service **/
 }
 main.top_mainImg_wrap .img_content_wrap {
   width: 100%;
@@ -227,7 +228,7 @@ main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_
   left: -145px;
 }
 main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_message {
-  font-family: var(--titleFonts);
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 3;
@@ -235,16 +236,77 @@ main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_
   margin: 0 0 0 auto;
   padding-left: 190px;
 }
-main.top_mainImg_wrap .about_content_wrap .left_line {
-  text-align: left;
-  margin: 0 auto;
+main.top_mainImg_wrap .service_content_wrap {
+  margin: 107px auto 160px;
 }
-main.top_mainImg_wrap .about_content_wrap .center_line {
+main.top_mainImg_wrap .service_content_wrap h2 {
+  background: #b2ddfb;
+  padding: 46px 0;
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  letter-spacing: 1rem;
+  margin-right: -1%;
+  color: #666666;
+  width: 100%;
+}
+main.top_mainImg_wrap .service_content_wrap h2 .service_first_txt {
+  color: #0082ff;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 920px;
+  margin: 80px auto;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items {
+  width: 30%;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .service_name {
+  font-size: 24px;
   text-align: center;
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  color: #5d5d5d;
+  letter-spacing: 1px;
 }
-main.top_mainImg_wrap .about_content_wrap .right_line {
-  text-align: right;
-  margin: 0 auto;
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .item_name {
+  color: #5d5d5d;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  letter-spacing: 2px;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .icon_wrap {
+  width: 190px;
+  height: 190px;
+  border: 5px solid;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px auto 45px;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .icon_wrap .item_logo_wrap {
+  width: 100px;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .note_wrap {
+  border-color: #ffbb5b;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .pencil_wrap {
+  border-color: #77c066;
+}
+main.top_mainImg_wrap .service_content_wrap .service_item_list .service_items .dating_wrap {
+  border-color: #0082ff;
 }
 
 .about_list {
@@ -258,4 +320,19 @@ main.top_mainImg_wrap .about_content_wrap .right_line {
   .test {
     color: yellow;
   }
+}
+
+/** module **/
+.left_line {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.center_line {
+  text-align: center;
+}
+
+.right_line {
+  text-align: right;
+  margin: 0 auto;
 }
