@@ -26,7 +26,7 @@ main.top_mainImg_wrap {
         letter-spacing: 0.05rem;
         color: #fff;
         text-align: right;
-        font-family: var( --mainFonts );
+        font-family: $mainFonts;
       }
       .my_name {
         font-size: 64px;
@@ -34,7 +34,7 @@ main.top_mainImg_wrap {
         line-height: 1;
         color: #ffffff;
         text-shadow: 4px 0px 3px rgba(15, 37, 63, 0.8);
-        font-family: var( --titleFonts );
+        font-family: $titleFonts;
       }
     }
     .top_mv_message_wrap {
@@ -165,6 +165,163 @@ main.top_mainImg_wrap {
         }
         .dating_wrap {
           border-color: #0082ff;
+        }
+      }
+    }
+  }
+  /** work **/
+  .works_content_wrap {
+    position: relative;
+    &::after {
+      /* background: #cff3d4; */
+      position: absolute;
+      content: "";
+      background: #8f8f8f;
+      height: 2px;
+      top: 90px;
+      right: 0;
+      width: 60%;
+      max-width: 1130px;
+    }
+    .works_inner {
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 46px 0;
+      .section_title {
+        font-family: $titleFonts;
+        font-size: 3.8rem;
+        line-height: 1.2;
+        letter-spacing: 1rem;
+        margin-right: -1%;
+        color: #666666;
+        width: 100%;
+        .works_first_txt {
+          color: #77c066;
+        }
+      }
+    }
+    .work_content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+      flex-wrap: wrap;
+      .work_item {
+        width: 48%;
+        margin-bottom: 60px;
+        .works_coding {
+          width: 100%;
+          height: clamp(160px, 165px, 200px);
+          outline: 1px solid #cff3d4;
+          overflow: hidden;
+          box-shadow: 27px 27px 0 -5px #cff3d4;
+          position: relative;
+          margin: 10px 0 30px;
+        }
+        .works_coding_caption {
+          margin: 30px auto 0;
+          font-family: $mainFonts;
+          font-weight: 500;
+          font-size: 16px;
+          color: rgb(79, 79, 79);
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  /** work **/
+  #canvas-container {
+    margin-top: -100px;
+  }
+  .contact_content_wrap {
+    margin-top: -10px;
+    background: #ffeece;
+    .contact_message {
+      margin-top: 90px;
+      font-family: $titleFonts;
+      letter-spacing: 0.55rem;
+      text-decoration: underline;
+      line-height: 2;
+      font-size: 18px;
+    }
+    .alert_message {
+      text-decoration: none;
+      color: #d61d3f;
+      letter-spacing: normal;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+    .mail_form {
+      width: 100%;
+      max-width: 960px;
+      margin: 90px auto 0;
+      dl {
+        width: 680px;
+        overflow: hidden;
+        margin: 0 auto;
+        dt {
+          clear: left;
+          float: left;
+          width: 25%;
+          font-family: $mainFonts;
+          color: #3e3e3e;
+          letter-spacing: .1rem;
+          span {
+            color: #d61d3f;
+            font-size: 12px;
+          }
+        }
+        dd {
+          padding-left: 25%;
+          padding-bottom: 1.5%;
+          margin-bottom: 2.5%;
+          input {
+            height: 25px;
+            font-size: 14px;
+            padding: 5px 10px;
+          }
+          textarea {
+            font-size: 14px;
+            padding: 5px 10px;
+            resize: none;
+          }
+        }
+      }
+      .confirmation_screen {
+        text-align: center;
+        margin-top: 20px;
+        .screen {
+          display: inline-block;
+          height: 54px;
+          text-align: center;
+          text-decoration: none;
+          line-height: 54px;
+          outline: none;
+          padding: 0 2.5%;
+          background-color: #d61d3f;
+          border: 2px solid #d61d3f;
+          color: #fff;
+          line-height: 50px;
+          font-weight: bold;
+          width: 50%;
+          font-size: 14px;
+          letter-spacing: 0.2em;
+          margin-bottom: 125px;
+          cursor: pointer;
+          transition: all 0.5s;
+          &::before,
+          &::after {
+            position: absolute;
+            z-index: -1;
+            display: block;
+            content: '';
+          }
+          &:hover {
+              background-color: #ffffff;
+              color: #d61d3f;
+          }
         }
       }
     }

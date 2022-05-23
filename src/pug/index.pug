@@ -89,4 +89,91 @@ block body
               |デザインで作成した通りに制作・プログラムしていきます。
               br
               |ここでは実際にサイト上に公開する最終段階になります。html/cssや動きのあるコンテンツをjavascriptで作成していきます。なるべく編集やカスタマイズしやすい様に心掛け作成しています。こちらが終わると納期になります。
+
+      section#works_content_wrap.works_content_wrap
+        article.works_inner
+          h2.section_title.left_line
+            span.works_first_txt W
+            |orks
+          ul.work_content
+            li.work_item
+              h3.items_title CODING
+                a(href="https://www.tobu.co.jp/sl/" target="_blank")
+                  figure.works_coding
+                    img(src=metas.imgpath + "toub/tobu_sltaijyu.jpg", alt="SL大樹")
+                  p.works_coding_caption
+                    |鉄道会社でフロントエンド・
+                    br
+                    |コーダーとして制作
+
+            li.work_item
+              h3.items_title CODING
+                a(href="https://www.sumida-machi.or.jp/" target="_blank")
+                  figure.works_coding
+                    img(src=metas.imgpath + "toub/sumidamachizukuri.jpg", alt="墨田まちづくり公社")
+                  p.works_coding_caption
+                    |鉄道会社でフロントエンド・
+                    br
+                    |コーダーとして制作
+
+            li.work_item
+              h3.items_title DESING
+                a(href="https://shop.mu-mo.net/" target="_blank")
+                  figure.works_coding
+                    img(src=metas.imgpath + "avex/yoshikiWorks.jpg", alt="ミューモ")
+                  p.works_coding_caption
+                    |大手音楽事務所でバナーデザイン・
+                    br
+                    |WEBサイトデザイン・サイトを制作
+
+            li.work_item
+              h3.items_title DESING
+                a(href="https://shop.mu-mo.net/" target="_blank")
+                  figure.works_coding
+                    img(src=metas.imgpath + "avex/shuta1280_800.jpg", alt="ミューモ")
+                  p.works_coding_caption
+                    |大手音楽事務所でバナー広告を作成
+                       
+            li.work_item
+              h3.items_title CODING
+                a(href="https://shop.mu-mo.net/" target="_blank")
+                  figure.works_coding
+                    img(src=metas.imgpath + "avex/wasta.jpg", alt="墨田まちづくり公社")
+                  p.works_coding_caption
+                    |大手音楽事務所でバナーデザイン・
+                    br
+                    |WEBサイトデザイン・サイトを制作
+
+            li.work_item
+              h3.items_title DESING
+                a(href="https://shibuyastream.jp/" target="_blank")
+                  figure.works_coding
+                    img(src=metas.imgpath + "firstvision/shibuyastream.jpg", alt="渋谷ストリーム")
+                  p.works_coding_caption
+                    |制作会社でアシスタントとして
+                    br
+                    |ワイヤーフレーム作成
+
+      section.contact_content_wrap#contact_content_wrap
+        h2.section_title.center_line Contact
+        p.contact_message.center_line お仕事のご依頼・ご相談など、お気軽にご連絡ください。
+        p.alert_message.center_line ※は入力必須項目です。必ずご入力ください。
+        #mail_form.mail_form
+          form(action="" method="post")
+            dl
+              dt お名前
+                span *
+              dd
+                input#name.name(type="text", name="name", size="60" value="" placeholder="お名前を入力ください")
+              dt メールアドレス 
+                span *
+              dd
+                input#email.email(type="email", name="mailaddress", size="60" value="", placeholder="メールアドレスを入力ください")
+              dt お問い合わせ内容
+                span *
+              dd
+                textarea#inquiry.inquiry(name="inquiry", cols="55", rows="5", placeholder="お問い合わせ内容を入力ください")
+            
+            .confirmation_screen
+              button.screen(type="submit", name="submit_confirm", value="confirmation") 確認画面へ
               
