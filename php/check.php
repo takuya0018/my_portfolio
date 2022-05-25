@@ -11,7 +11,7 @@ if (!isset($_SESSION['form'])) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // メールを送信する
-    $to = 'toyoken007@gmail.com';
+    $to = 'gtk.9223@gmail.com';
     $from = $post['email'];
     $subject = 'お問い合わせが届きました';
     $body = <<<EOT
