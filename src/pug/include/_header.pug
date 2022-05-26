@@ -4,7 +4,7 @@ header
   include ./_json
   nav.nav_wrap
     h1#top_logo.top_logo
-      a(href="../")
+      a(href="/")
         img(src="./images/logo2.png", alt="Liberty")
     ul.menu_nav
       - for (var i = 0; i < headerMenu.length; i++)
@@ -20,3 +20,23 @@ header
                   li
                     a(href=headerMenu[i].pageLink + '/' + headerMenu[i].childMenu[j].pageLink)
                       | #{headerMenu[i].childMenu[j].pageName}
+    //- ハンバーガメニュー
+    .hamburger-menu
+      input(type="checkbox")#menu-btn-check
+      label(for="menu-btn-check").menu-btn
+        span
+      .menu-content
+        ul.menu_nav_sp
+          - for (var i = 0; i < headerMenu.length; i++)
+            li
+              if headerMenu[i].pageLink != null
+                a(href=headerMenu[i].pageLink)
+                  | #{headerMenu[i].pageName}
+              else
+                |#{headerMenu[i].pageName}
+                if headerMenu[i].childMenu != null
+                  ul.list-menu__child
+                    - for (var j = 0; j < headerMenu[i].childMenu.length; j++)
+                      li
+                        a(href=headerMenu[i].pageLink + '/' + headerMenu[i].childMenu[j].pageLink)
+                          | #{headerMenu[i].childMenu[j].pageName}

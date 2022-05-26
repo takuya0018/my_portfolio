@@ -56,11 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <meta property="og:title" content="kikuta takuya">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://ue-takuken.com/takuya_portfolio/">
-        <meta property="og:image" content="https://ue-takuken.com/takuya_portfolio/images/mainHeader_03@2x.jpg">
+        <meta property="og:image" content="https://ue-takuken.com/takuya_portfolio/images/ogImg.jpg">
         <meta property="og:site_name" content="site_name">
         <meta property="og:description" content="Takuya Kikutaのポートフォリオサイト">
-        <meta property="fb:app_id" content="任意のID">
+        <meta property="fb:app_id" content="">
     <title>kikuta takuya</title>
+    <link rel="apple-touch-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -73,19 +74,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </script>
   </head>
   <body>
-    <header>
+  <header>
       <nav class="nav_wrap">
-        <h1 class="top_logo" id="top_logo"><a href="../"><img src="./images/logo2.png" alt="Liberty"></a></h1>
+        <h1 class="top_logo" id="top_logo"><a href="/"><img src="./images/logo2.png" alt="Liberty"></a></h1>
         <ul class="menu_nav">
-          <li><a href="#about_content_wrap">About</a>
+          <li><a href="index.php#about_content_wrap">About</a>
           </li>
-          <li><a href="#service_content_wrap">Service</a>
+          <li><a href="index.php#service_content_wrap">Service</a>
           </li>
-          <li><a href="#works_content_wrap">Works</a>
+          <li><a href="index.php#works_content_wrap">Works</a>
           </li>
-          <li><a href="#contact_content_wrap">Contact</a>
+          <li><a href="index.php#contact_content_wrap">Contact</a>
           </li>
         </ul>
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label class="menu-btn" for="menu-btn-check"><span></span></label>
+          <div class="menu-content">
+            <ul class="menu_nav_sp">
+              <li><a href="index.php#about_content_wrap">About</a>
+              </li>
+              <li><a href="index.php#service_content_wrap">Service</a>
+              </li>
+              <li><a href="index.php#works_content_wrap">Works</a>
+              </li>
+              <li><a href="index.php#contact_content_wrap">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="top_mainImg_wrap" id="topPage">
