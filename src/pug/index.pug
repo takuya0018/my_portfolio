@@ -5,8 +5,8 @@ block var
   - metas.url = '/'
   - metas.imgpath = './images/'
   - metas.site_name = 'site_name'
-  - metas.description = 'description'
-  - metas.keywords = 'keywords'
+  - metas.description = 'Takuya Kikutaのポートフォリオサイト'
+  - metas.keywords = '菊田琢也,Takuya Kikuta,WEB制作,熊本,地域復興,農家,WEBデザイン'
 block append meta
   +meta(metas)
   include ./include/_inc_meta_facebook
@@ -64,7 +64,7 @@ block body
             p.item_name ディレクション
             .icon_wrap.note_wrap
               figure.item_logo_wrap
-                img(src=metas.imgpath + "ノートロゴ.png", alt="ディレクション")
+                img(src=metas.imgpath + "direction_logo.png", alt="ディレクション")
             p.service_txt
               |お客様の要望を聞き、問題点と方向性を決めさせて頂きます。
               br
@@ -74,7 +74,7 @@ block body
             p.item_name デザイン
             .icon_wrap.pencil_wrap
               figure.item_logo_wrap
-                img(src=metas.imgpath + "鉛筆ロゴ.png", alt="デザイン")
+                img(src=metas.imgpath + "design_logo.png", alt="デザイン")
             p.service_txt
               |ディレクションに沿ったデザインを作成いたします。
               br
@@ -84,7 +84,7 @@ block body
             p.item_name 制作
             .icon_wrap.dating_wrap
               figure.item_logo_wrap
-                img(src=metas.imgpath + "コーディングロゴ.png", alt="制作")
+                img(src=metas.imgpath + "coding_logo.png", alt="制作")
             p.service_txt
               |デザインで作成した通りに制作・プログラムしていきます。
               br
@@ -153,7 +153,8 @@ block body
                     |制作会社でアシスタントとして
                     br
                     |ワイヤーフレーム作成
-
+      #canvas-container
+        canvas#sineCanvas(width="1430" height="300")
       section.contact_content_wrap#contact_content_wrap
         h2.section_title.center_line Contact
         p.contact_message.center_line お仕事のご依頼・ご相談など、お気軽にご連絡ください。

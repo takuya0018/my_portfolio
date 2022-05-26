@@ -1,3 +1,49 @@
+<?php 
+
+session_start();
+$post = [
+  'name'  => '',
+  'email' => '',
+  'inquiry' => ''
+];
+
+$error = [];
+
+/* htmlspecialcharsを短くする */
+function h($value) {
+  return htmlspecialchars($value, ENT_QUOTES);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $post['name'] = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+  if ($post['name'] === '') {
+      $error['name'] = 'blank';
+  }
+  
+  $post['email'] = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+  if ($post['email'] === '') {
+      $error['email'] = 'blank';
+  } else if (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
+    $error['email'] = 'email';
+  }
+
+  $post['inquiry'] = filter_input(INPUT_POST, 'inquiry');
+  if ($post['inquiry'] === '') {
+    $error['inquiry'] = 'blank';
+  }
+
+  if (count($error) === 0) {
+    $_SESSION['form'] = $post;
+    header('Location: check.php');
+    exit();
+  }
+} else {
+    if (isset($_SESSION['form'])) {
+      $post = $_SESSION['form'];
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -9,8 +55,8 @@
         <meta name="author" content="">
         <meta property="og:title" content="kikuta takuya">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://#{metas.url}">
-        <meta property="og:image" content="http://#{metas.image}/og_image.png">
+        <meta property="og:url" content="https://ue-takuken.com/takuya_portfolio/">
+        <meta property="og:image" content="https://ue-takuken.com/takuya_portfolio/images/mainHeader_03@2x.jpg">
         <meta property="og:site_name" content="site_name">
         <meta property="og:description" content="Takuya Kikutaのポートフォリオサイト">
         <meta property="fb:app_id" content="任意のID">
@@ -150,15 +196,27 @@
               <dl>
                 <dt>お名前<span>*</span></dt>
                 <dd>
-                  <input class="name" id="name" type="text" name="name" size="60" value="" placeholder="お名前を入力ください">
+                  <input class="name" id="name" type="text" name="name" size="50" value="<?php echo h($post['name']); ?>" placeholder="お名前を入力ください">
+                  <?php if (isset($error['name']) && $error['name'] === 'blank'): ?>
+                      <P>※お名前をご記入ください</P>
+                  <?php endif; ?>
                 </dd>
                 <dt>メールアドレス <span>*</span></dt>
                 <dd>
-                  <input class="email" id="email" type="email" name="mailaddress" size="60" value="" placeholder="メールアドレスを入力ください">
+                  <input class="email" id="email" type="email" name="email" size="50" value="<?php echo h($post['email']); ?>" placeholder="メールアドレスを入力ください">
+                  <?php if (isset($error['email']) && $error['email'] === 'blank'): ?>
+                      <P>※メールアドレスをご記入ください</P>
+                  <?php endif; ?>
+                  <?php if (isset($error['email']) && $error['email'] === 'email'): ?>
+                      <P>※メールアドレスを正しくご記入ください</P>
+                  <?php endif; ?>
                 </dd>
                 <dt>お問い合わせ内容<span>*</span></dt>
                 <dd>
-                  <textarea class="inquiry" id="inquiry" name="inquiry" cols="55" rows="5" placeholder="お問い合わせ内容を入力ください"></textarea>
+                  <textarea class="inquiry" id="inquiry" name="inquiry" cols="55" rows="5" placeholder="お問い合わせ内容を入力ください"><?php echo htmlspecialchars($post['inquiry'], ENT_QUOTES); ?></textarea>
+                  <?php if (isset($error['inquiry']) && $error['inquiry'] === 'blank'): ?>
+                      <P>※お問い合わせ内容をご記入ください</P>
+                  <?php endif; ?>
                 </dd>
               </dl>
               <div class="confirmation_screen">

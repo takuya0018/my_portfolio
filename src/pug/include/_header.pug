@@ -5,12 +5,12 @@ header
   nav.nav_wrap
     h1#top_logo.top_logo
       a(href="../")
-        img(src="../images/logo2.png", alt="Liberty")
+        img(src="./images/logo2.png", alt="Liberty")
     ul.menu_nav
       - for (var i = 0; i < headerMenu.length; i++)
         li
           if headerMenu[i].pageLink != null
-            a(href=headerMenu[i].pageLink + '/')
+            a(href=headerMenu[i].pageLink)
               | #{headerMenu[i].pageName}
           else
             |#{headerMenu[i].pageName}
