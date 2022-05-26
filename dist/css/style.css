@@ -206,7 +206,7 @@ header .nav_wrap .hamburger-menu {
   }
   header .nav_wrap .hamburger-menu .menu-btn {
     position: fixed;
-    top: 10px;
+    top: 0;
     right: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -518,6 +518,7 @@ main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_
     padding-left: 0;
     font-size: 1rem;
     line-height: 2;
+    text-align: center;
   }
 }
 main.top_mainImg_wrap .service_content_wrap {

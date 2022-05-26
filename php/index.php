@@ -56,11 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <meta property="og:title" content="kikuta takuya">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://ue-takuken.com/takuya_portfolio/">
-        <meta property="og:image" content="https://ue-takuken.com/takuya_portfolio/images/ogImg.jpg">
+        <meta property="og:image" content="https://ue-takuken.com/takuya_portfolio/images/favicon.png">
         <meta property="og:site_name" content="site_name">
         <meta property="og:description" content="Takuya Kikutaのポートフォリオサイト">
         <meta property="fb:app_id" content="">
     <title>kikuta takuya</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script>
