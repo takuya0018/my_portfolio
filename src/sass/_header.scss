@@ -6,9 +6,9 @@ header {
 	margin: 0 auto;
 	padding: 27px 0;
 	@include mq(sp) {
-        width: 95%;
-    	padding: 10px 0;
-    }
+    width: 95%;
+    padding: 10px 0;
+  }
 	.nav_wrap {
 		display: flex;
 		align-items: center;
