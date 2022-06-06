@@ -77,7 +77,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <body>
   <header>
       <nav class="nav_wrap">
-        <h1 class="top_logo" id="top_logo"><a href="/"><img src="./images/logo2.png" alt="Liberty"></a></h1>
+        <h1 class="top_logo" id="top_logo"><a href="/"><img src="./images/kumanami-logo.png" alt="くまなみ"></a></h1>
+        <ul class="head_sns">
+          <li><a href="https://twitter.com/LKawauso" target="_blanck"><img src="images/twitter-icons.png" alt="twitter"></a></li>
+        </ul>
         <ul class="menu_nav">
           <li><a href="index.php#about_content_wrap">About</a>
           </li>
@@ -123,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </li>
         </ul>
         <div class="top_mv_message_wrap">
-          <p class="mv_inner_message">人から人へ思いをつなげる<br>想像と可能性をひろげ、わくわくする<br>そんなお手伝いができたら．．．</p>
+          <p class="mv_inner_message">田舎から都会・世界中へ<br>人々の笑顔をインターネットに乗せて<br>WEBサイトで人と世界を繋ぎたい。</p>
         </div>
       </div>
       <article id="content-inner-wrap">
@@ -132,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div class="about_inner_message">
             <div class="bg_white">
               <figure class="about_my_photo"><img src="./images/about_img@2x.jpg" alt="自画像"></figure>
-              <p class="about_message">固定概念に囚われない、<br>楽しい・面白いを大切にしています。<br>お客様とのコミュニケーションを大切にし<br>情報整理から問題点を洗い出し、<br>わくわく出来るようなWEBサイトを制作します。</p>
+              <p class="about_message ani">固定概念に囚われない、<br>楽しい・面白いを大切にしています。<br>お客様とのコミュニケーションを大切にし<br>情報整理から問題点を洗い出し、<br>わくわく出来るようなWEBサイトを制作します。</p>
             </div>
           </div>
         </section>
@@ -169,32 +172,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <article class="works_inner">
             <h2 class="section_title left_line"><span class="works_first_txt">W</span>orks</h2>
             <ul class="work_content">
-              <li class="work_item">
+              <li class="work_item ani">
                 <h3 class="items_title">CODING<a href="https://www.tobu.co.jp/sl/" target="_blank">
                     <figure class="works_coding"><img src="./images/toub/tobu_sltaijyu.jpg" alt="SL大樹"></figure>
                     <p class="works_coding_caption">鉄道会社でフロントエンド・<br>コーダーとして制作</p></a></h3>
               </li>
-              <li class="work_item">
+              <li class="work_item ani">
                 <h3 class="items_title">CODING<a href="https://www.sumida-machi.or.jp/" target="_blank">
                     <figure class="works_coding"><img src="./images/toub/sumidamachizukuri.jpg" alt="墨田まちづくり公社"></figure>
                     <p class="works_coding_caption">鉄道会社でフロントエンド・<br>コーダーとして制作</p></a></h3>
               </li>
-              <li class="work_item">
+              <li class="work_item ani">
                 <h3 class="items_title">DESING<a href="https://shop.mu-mo.net/" target="_blank">
                     <figure class="works_coding"><img src="./images/avex/yoshikiWorks.jpg" alt="ミューモ"></figure>
                     <p class="works_coding_caption">大手音楽事務所でバナーデザイン・<br>WEBサイトデザイン・サイトを制作</p></a></h3>
               </li>
-              <li class="work_item">
+              <li class="work_item ani">
                 <h3 class="items_title">DESING<a href="https://shop.mu-mo.net/" target="_blank">
                     <figure class="works_coding"><img src="./images/avex/shuta1280_800.jpg" alt="ミューモ"></figure>
                     <p class="works_coding_caption">大手音楽事務所でバナー広告を作成</p></a></h3>
               </li>
-              <li class="work_item">
+              <li class="work_item ani">
                 <h3 class="items_title">CODING<a href="https://shop.mu-mo.net/" target="_blank">
                     <figure class="works_coding"><img src="./images/avex/wasta.jpg" alt="墨田まちづくり公社"></figure>
                     <p class="works_coding_caption">大手音楽事務所でバナーデザイン・<br>WEBサイトデザイン・サイトを制作</p></a></h3>
               </li>
-              <li class="work_item">
+              <li class="work_item ani">
                 <h3 class="items_title">DESING<a href="https://shibuyastream.jp/" target="_blank">
                     <figure class="works_coding"><img src="./images/firstvision/shibuyastream.jpg" alt="渋谷ストリーム"></figure>
                     <p class="works_coding_caption">制作会社でアシスタントとして<br>ワイヤーフレーム作成</p></a></h3>

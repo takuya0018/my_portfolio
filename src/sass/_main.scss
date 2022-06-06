@@ -2,10 +2,6 @@
 * top
 ---------------------------*/
 main.top_mainImg_wrap {
-  margin-top: 13px;
-  @include mq(sp) {
-    margin-top: 0;
-  }
   .img_content_wrap {
     width: 100%;
     height: 555px;
@@ -165,6 +161,7 @@ main.top_mainImg_wrap {
           letter-spacing: .6px;
           margin: 0 0 0 auto;
           padding-left: 190px;
+          opacity: 0;
           @include mq(sp) {
             padding-left: 0;
             font-size: 1rem;
@@ -329,6 +326,7 @@ main.top_mainImg_wrap {
       .work_item {
         width: 48%;
         margin-bottom: 60px;
+        opacity: 0;
         @include mq(sp) {
           width: 100%;
           &:nth-last-of-type(1) {

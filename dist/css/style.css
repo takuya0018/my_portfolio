@@ -84,6 +84,7 @@ header {
   width: 63.5%;
   margin: 0 auto;
   padding: 27px 0;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   header {
@@ -109,6 +110,22 @@ header .nav_wrap .top_logo {
   header .nav_wrap .top_logo {
     width: 100px;
   }
+}
+header .nav_wrap .head_sns {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 767px) {
+  header .nav_wrap .head_sns {
+    display: none;
+  }
+}
+header .nav_wrap .head_sns:hover {
+  opacity: 0.8;
 }
 header .nav_wrap .menu_nav {
   font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
@@ -291,16 +308,10 @@ header .nav_wrap .hamburger-menu .menu-btn span::after {
 * top
 ---------------------------*/
 main.top_mainImg_wrap {
-  margin-top: 13px;
   /** about **/
   /** service **/
   /** work **/
   /** canvas **/
-}
-@media screen and (max-width: 767px) {
-  main.top_mainImg_wrap {
-    margin-top: 0;
-  }
 }
 main.top_mainImg_wrap .img_content_wrap {
   width: 100%;
@@ -512,6 +523,7 @@ main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_
   letter-spacing: 0.6px;
   margin: 0 0 0 auto;
   padding-left: 190px;
+  opacity: 0;
 }
 @media screen and (max-width: 767px) {
   main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_message {
@@ -713,6 +725,7 @@ main.top_mainImg_wrap .works_content_wrap .work_content {
 main.top_mainImg_wrap .works_content_wrap .work_content .work_item {
   width: 48%;
   margin-bottom: 60px;
+  opacity: 0;
 }
 @media screen and (max-width: 767px) {
   main.top_mainImg_wrap .works_content_wrap .work_content .work_item {
@@ -945,16 +958,9 @@ footer .copyright {
   }
 }
 
-.test {
-  color: blue;
-}
-@media screen and (max-width: 767px) {
-  .test {
-    color: yellow;
-  }
-}
-
-/** module **/
+/* -------------------------
+* module
+---------------------------*/
 .left_line {
   text-align: left;
   margin: 0 auto;
@@ -981,5 +987,37 @@ footer .copyright {
 @media screen and (max-width: 767px) {
   .right_line {
     text-align: center;
+  }
+}
+
+/** animation **/
+.anima-left {
+  -webkit-animation: fadeIn 1s ease 1s 1 normal forwards;
+          animation: fadeIn 1s ease 1s 1 normal forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
