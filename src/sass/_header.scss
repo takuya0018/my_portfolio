@@ -2,7 +2,8 @@
 * header
 ---------------------------*/
 header {
-	width: 63.5%;
+	width: 90%;
+	max-width: 1067px;
 	margin: 0 auto;
 	padding: 27px 0;
 	position: relative;
@@ -20,7 +21,7 @@ header {
 				width: 100px;
 			}
 		}
-		
+		// SNS
 		.head_sns {
 			position: absolute;
 			top: 10px;

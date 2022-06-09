@@ -1,0 +1,69 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'About | kikuta takuya'
+  - metas.url = '/'
+  - metas.imgpath = '../images/'
+  - metas.site_name = 'ABOUT | kikuta takuya'
+  - metas.description = 'Takuya Kikutaのポートフォリオサイト'
+  - metas.keywords = '菊田琢也,Takuya Kikuta,WEB制作,熊本,地域復興,農家,WEBデザイン'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title #{metas.title}
+block link
+  link(rel='stylesheet', href="../css/style.css")
+block body
+  main#about_page.about_page
+    figure.about_mv
+      img.pc-show(src=metas.imgpath + "about_mv.jpg", alt="aboutページ")
+      img.sp-show(src=metas.imgpath + "about_mv_sp.jpg", alt="aboutページ")
+    h2.page_title
+      span.main_txt ABOUT
+      span.sub_box
+        span.sab_txt ABOUT
+    section.about_content
+      h2.name TAKUYA KIKUTA
+      p.closs_txt 東京にてフリーランスのWeb制作をしております。
+      p.content_inner 1986年、熊本県球磨郡あさぎり町（旧上村）生まれ。
+        br
+        br
+        |2017年からWEB制作会社でアシスタントとしてデザイン・コーディングなどの業務を行う。
+        br
+        |大手芸能事務所をはじめ、鉄道会社などに参画しながら個人でも活動中。
+        br
+        |「WEBで皆が豊かに。。。」をコンセプトに色々な提案や個人や企業様・地域に貢献していきます。
+        br
+        |趣味はゲームや最新の技術を勉強したり、海外・国内旅行。人と話す事がとても好きです。「ばかだな。」と思われる事もやるのも好き
+        small (＊常識の範囲で。)
+
+    section.access_content
+      .inner_access
+        h3.my_img
+          img(src=metas.imgpath + "profile.jpg", alt="菊田琢也")
+        .access_box
+          table
+            tr
+              td.tb_title 名称：
+              td くまなみ
+            tr
+              td.tb_title 所在地：
+              td 東京都杉並区
+            tr 
+              td.tb_title 事業内容：
+              td Web制作やSNSなどにおけるディレクション、
+                br
+                |デザイン、コーディング、HP改善・改修
+            tr
+              td.tb_title スキル・ツール：
+              td 
+                p HTML/Pug/CSS/SCSS/JavaScript/jQuery
+                  br
+                  |/Vue.js/PHP/git/SourceTree/Photoshop
+                  br
+                  |/WordPress...
+    
+    section.contact_bnt
+      a(href="../index.html#contact_content_wrap") お問い合わせはこちら

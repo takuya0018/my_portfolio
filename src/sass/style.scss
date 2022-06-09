@@ -12,12 +12,26 @@
 @import "header";
 //main
 @import "main";
+//about
+@import "about";
 //footer
 @import "footer";
 
 /* -------------------------
 * module
 ---------------------------*/
+.pc-show {
+    display: block;
+    @include mq(sp) {
+        display: none;
+    }
+}
+.sp-show {
+    display: none;
+    @include mq(sp) {
+        display: block;
+    }
+}
 .left_line {
     text-align: left;
     margin: 0 auto;
@@ -51,5 +65,18 @@
       opacity: 1;
       transform: translateX(0);
     }
-  }
+}
+
+main {
+    opacity: 0;
+    animation: uppage 1s ease-in forwards;
+}
+@keyframes uppage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
