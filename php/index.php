@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <body>
   <header>
       <nav class="nav_wrap">
-        <h1 class="top_logo" id="top_logo"><a href="/"><img src="./images/kumanami-logo.png" alt="くまなみ"></a></h1>
+        <h1 class="top_logo" id="top_logo"><a href="https://ue-takuken.com/takuya_portfolio/"><img src="./images/kumanami-logo.png" alt="くまなみ"></a></h1>
         <ul class="head_sns">
           <li><a href="https://twitter.com/LKawauso" target="_blanck"><img src="images/twitter-icons.png" alt="twitter"></a></li>
         </ul>
@@ -249,7 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </article>
     </main>
     <footer class="footer" id="footer">
-      <p class="copyright">&copy; 2022 - Liberty KIKUTATAKUYA.</p>
+      <p class="copyright">&copy; 2022 - くまなみ KIKUTATAKUYA.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
