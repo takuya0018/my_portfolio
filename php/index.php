@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="https://twitter.com/LKawauso" target="_blanck"><img src="images/twitter-icons.png" alt="twitter"></a></li>
         </ul>
         <ul class="menu_nav">
-          <li><a href="index.php#about_content_wrap">About</a>
+          <li><a href="about/">About</a>
           </li>
           <li><a href="index.php#service_content_wrap">Service</a>
           </li>
@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <label class="menu-btn" for="menu-btn-check"><span></span></label>
           <div class="menu-content">
             <ul class="menu_nav_sp">
-              <li><a href="index.php#about_content_wrap">About</a>
+              <li><a href="about/">About</a>
               </li>
               <li><a href="index.php#service_content_wrap">Service</a>
               </li>

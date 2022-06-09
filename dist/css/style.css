@@ -81,7 +81,8 @@ a {
 * header
 ---------------------------*/
 header {
-  width: 63.5%;
+  width: 90%;
+  max-width: 1067px;
   margin: 0 auto;
   padding: 27px 0;
   position: relative;
@@ -115,7 +116,7 @@ header .nav_wrap .head_sns {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 36px;
+  width: 32px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -926,6 +927,247 @@ main.top_mainImg_wrap .contact_content_wrap .mail_form .confirmation_screen .scr
 }
 
 /* -------------------------
+* about
+---------------------------*/
+#about_page {
+  padding-top: 148px;
+  position: relative;
+}
+#about_page figure.about_mv {
+  position: relative;
+}
+#about_page .page_title {
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  font-size: 70px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  line-height: 1;
+  position: absolute;
+  top: 118px;
+  right: 0;
+  left: 0;
+  text-align: right;
+}
+#about_page .page_title .main_txt {
+  color: #666;
+}
+#about_page .page_title .sub_box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 44%;
+  overflow: hidden;
+  right: 0;
+}
+#about_page .page_title .sub_box .sab_txt {
+  color: #ffffff;
+  position: absolute;
+  top: -78%;
+  right: 0;
+  overflow: hidden;
+}
+#about_page section.about_content {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 160px 0 100px;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.about_content {
+    padding: 100px 20px 60px;
+  }
+}
+#about_page section.about_content h2.name {
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", sans-serif;
+  font-size: 57px;
+  display: block;
+  line-height: 1;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.about_content h2.name {
+    font-size: 28.5px;
+    letter-spacing: 1px;
+  }
+}
+#about_page section.about_content h2.name::before {
+  content: "菊田 タクヤ";
+  display: block;
+  line-height: 2;
+  font-size: 40px;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.about_content h2.name::before {
+    font-size: 20px;
+  }
+}
+#about_page section.about_content .closs_txt {
+  font-size: 42px;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  line-height: 2;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.about_content .closs_txt {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+}
+#about_page section.about_content .content_inner {
+  margin-top: 140px;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+  font-size: 20px;
+  line-height: 3;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.about_content .content_inner {
+    margin-top: 100px;
+    line-height: 2;
+    font-size: 14px;
+  }
+}
+#about_page section.access_content {
+  border-top: 3px solid #666;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 140px 0;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content {
+    padding: 100px 20px 60px;
+    border-top: 1px dashed #666;
+  }
+}
+#about_page section.access_content .inner_access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+#about_page section.access_content .inner_access h3.my_img {
+  width: 200px;
+  overflow: hidden;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access h3.my_img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 auto;
+  }
+}
+#about_page section.access_content .inner_access .access_box {
+  line-height: 2;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access .access_box {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 40px 0 0;
+  }
+}
+#about_page section.access_content .inner_access .access_box table {
+  width: 700px;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access .access_box table {
+    width: 100%;
+  }
+}
+#about_page section.access_content .inner_access .access_box table tr {
+  vertical-align: top;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access .access_box table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+#about_page section.access_content .inner_access .access_box table tr td {
+  padding: 10px 20px;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access .access_box table tr td {
+    padding: 0;
+  }
+}
+#about_page section.access_content .inner_access .access_box table tr td:not(.tb_title) {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+#about_page section.access_content .inner_access .access_box table tr .tb_title {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.access_content .inner_access .access_box table tr .tb_title {
+    background-color: #666;
+    color: #fff;
+    padding: 0px 10px;
+  }
+}
+#about_page section.contact_bnt {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+#about_page section.contact_bnt a {
+  display: inline-block;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  padding: 0 2.5%;
+  background-color: #d61d3f;
+  border: 2px solid #d61d3f;
+  color: #fff;
+  line-height: 50px;
+  font-weight: bold;
+  width: 50%;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  margin-bottom: 125px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 767px) {
+  #about_page section.contact_bnt a {
+    margin-bottom: 100px;
+  }
+}
+#about_page section.contact_bnt a:hover {
+  background-color: #ffffff;
+  color: #d61d3f;
+}
+
+/* -------------------------
 * footer
 ---------------------------*/
 footer {
@@ -961,6 +1203,24 @@ footer .copyright {
 /* -------------------------
 * module
 ---------------------------*/
+.pc-show {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .pc-show {
+    display: none;
+  }
+}
+
+.sp-show {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .sp-show {
+    display: block;
+  }
+}
+
 .left_line {
   text-align: left;
   margin: 0 auto;
@@ -1019,5 +1279,28 @@ footer .copyright {
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+main {
+  opacity: 0;
+  -webkit-animation: uppage 1s ease-in forwards;
+          animation: uppage 1s ease-in forwards;
+}
+
+@-webkit-keyframes uppage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes uppage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
