@@ -82,13 +82,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <li><a href="https://twitter.com/LKawauso" target="_blanck"><img src="images/twitter-icons.png" alt="twitter"></a></li>
         </ul>
         <ul class="menu_nav">
-          <li><a href="about/">About</a>
+          <li><a href="https://ue-takuken.com/takuya_portfolio/about/">About</a>
           </li>
-          <li><a href="index.php#service_content_wrap">Service</a>
+          <li><a href="https://ue-takuken.com/takuya_portfolio/index.php#service_content_wrap">Service</a>
           </li>
-          <li><a href="index.php#works_content_wrap">Works</a>
+          <li><a href="https://ue-takuken.com/takuya_portfolio/index.php#works_content_wrap">Works</a>
           </li>
-          <li><a href="index.php#contact_content_wrap">Contact</a>
+          <li><a href="https://ue-takuken.com/takuya_portfolio/index.php#contact_content_wrap">Contact</a>
           </li>
         </ul>
         <div class="hamburger-menu">
