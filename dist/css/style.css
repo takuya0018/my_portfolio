@@ -529,6 +529,7 @@ main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_
 @media screen and (max-width: 767px) {
   main.top_mainImg_wrap .about_content_wrap .about_inner_message .bg_white .about_message {
     padding-left: 0;
+    width: 100%;
     font-size: 1rem;
     line-height: 2;
     text-align: center;
