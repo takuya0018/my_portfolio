@@ -1253,8 +1253,8 @@ footer .copyright {
 
 /** animation **/
 .anima-left {
-  -webkit-animation: fadeIn 1s ease 1s 1 normal forwards;
-          animation: fadeIn 1s ease 1s 1 normal forwards;
+  -webkit-animation: fadeIn 1s ease 0.2s 1 normal forwards;
+          animation: fadeIn 1s ease 0.2s 1 normal forwards;
 }
 
 @-webkit-keyframes fadeIn {
